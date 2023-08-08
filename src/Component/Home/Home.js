@@ -20,11 +20,12 @@ const Home = ({SetWeatherData}) => {
       if (result.cod === 200) {
       navigate("/weather");
       }
+      else if(result.cod == 404)
+      alert("Error City Not Found")
     } catch (error) {
       console.error("Error fetching weather data:", error);
-      alert("Error fetching weather data:", error);
+      alert("Error fetching weather data:", error.message);
     } 
-
   }
 
   const GetLocation =async ()=>{

@@ -13,7 +13,7 @@ function App() {
     <div className="container">
       <Routes>
         <Route path='/' element={<Home SetWeatherData={SetWeatherData}/>}/>
-        <Route path='/weather' element={<Weather/>}/> 
+        <Route path='/weather' element={<Weather data={WeatherData}/>}/> 
       </Routes>
     </div>
     </Router>
